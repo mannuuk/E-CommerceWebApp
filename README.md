@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Clone the repository:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+git clone https://github.com/your-username/product-list-app.git
+
+cd product-list-app
 
 ## Available Scripts
 
@@ -39,8 +41,82 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Product List Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Overview
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is a dynamic product listing application that fetches product data from an external API and displays it with interactive features like filtering, sorting, infinite scrolling, and a product details modal. The application is fully responsive and optimized for both mobile and desktop views. It follows best practices for code structure, performance optimization, and modularity.
+
+## Features
+
+- **Product List View**: Displays a list of products fetched from an API using https://fakestoreapi.in/api.
+- **Infinite Scrolling**: Dynamically loads more products as the user scrolls down using the **react-infinite-scroll-component**.
+- **Filtering and Sorting**: Allows users to filter products by category and to sort by price.
+- **Product Details Modal**: Clicking on a product opens a modal with more detailed information.
+- **Responsive Design**: Supports both mobile and desktop layouts.
+- **Optimized Code**: Follows modular, reusable components and performance best practices.
+
+## Design Decisions
+
+### 1. **Architecture**
+
+- The application follows a **component-based architecture**, which promotes reusability and maintainability. We break down the UI into smaller, self-contained components such as `Pages`, `PageHeader`, `ProductCard`, `Filter`, `ProductDetailsModal`, `Spinner`, etc.
+- **State management**: State is managed using **React's useState**.
+
+### 2. **Tech Stack**
+
+- **React** for the UI framework.
+- **Tanstack Query** for data fetching, caching, and managing loading and error states.
+- **Axios** for making API requests and handling responses.
+- **react-infinite-scroll-component** for implementing the infinite scrolling feature.
+- **Tailwind CSS** for utility-first CSS styling.
+- **Headless UI** for accessible, unstyled UI components like modals, dropdowns, and switches.
+- **@heroicons/react** for using accessible, customizable icons in the app.
+- **CSS Grid** for layout and **Media Queries** for responsive design.
+
+### 3. **Design Patterns**
+
+- **Container-Presenter Pattern**: We used the container-presenter pattern for separating logic and UI. Components like `ProductList` and `Filter` manage the logic, while `ProductCard` handles the UI rendering.
+- **Lazy Loading**: **React.lazy** is used to load components only when they are needed, which helps to reduce the initial bundle size.
+
+### 4. **Performance Optimizations**
+
+- **Image Optimization**: All images are optimized for web usage with reduced file sizes. We use **lazy loading** for images, which helps to only load images when they are in the viewport.
+- **Infinite Scrolling**: The infinite scroll functionality uses the **react-infinite-scroll-component**, which fetches data only when necessary, preventing unnecessary re-fetching.
+- **Memoization**: React.lazy() and React’s **useMemo** hooks are used to memoize expensive calculations and event handlers to avoid unnecessary re-renders.
+
+## Features Breakdown
+
+### 1. **Product List View**
+
+- Products are fetched using **Tanstack Query** and **Axios** from the **fake store API** (or any other provided API).
+- Each product displays its name, price, category, and image.
+- Infinite scrolling is implemented with the **react-infinite-scroll-component**, fetching more products as the user reaches the bottom of the page.
+
+### 2. **Filtering and Sorting**
+
+- **Filters**: Users can filter products by category.
+- **Sorting**: Users can sort products by price (low-to-high or high-to-low).
+- Both filter and sorting options are applied **without page reload**, providing a seamless experience.
+- Filters are implemented as **controlled components**, making the data flow predictable.
+- Both are managed in Frontend side.
+
+### 3. **Product Details Modal**
+
+- When a user clicks on a product, a modal opens with more detailed information about the product.
+- Data for the modal is loaded dynamically to optimize performance. The modal is built using **Headless UI** components for accessibility.
+
+### 4. **Responsive Design**
+
+- The application uses a **CSS grid layout** for desktop and a **list layout** for mobile.
+- Media queries are used to switch between layouts, ensuring the application works seamlessly across devices of all sizes.
+
+### 5. **Error Handling and Loading States**
+
+- **Error handling and loading states** are managed by **Tanstack Query**.
+- **Loading**: While the data is being fetched, Tanstack Query provides a loading state to show spinners or placeholders.
+- **Error handling**: If the API request fails, Tanstack Query automatically manages error states and allows for displaying user-friendly error messages.
+
+## Known Limitations & Enhancements
+
+- **Pagination**: While infinite scrolling is implemented, pagination could provide a better UX in certain scenarios (e.g., if users want to navigate between pages).

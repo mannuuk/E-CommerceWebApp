@@ -12,6 +12,7 @@ function ProductCard(props: PRODUCT_CARD_TYPE) {
         src={image}
         alt="product image"
         className="w-full h-48 object-contain"
+        loading="lazy"
       />
       <h6 className="text-primary font-[700] text-center py-2">${price}</h6>
       <h6 className="text-background text-[16px] font-[600] two-line-ellipsis text-center">
