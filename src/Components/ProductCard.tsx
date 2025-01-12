@@ -7,7 +7,7 @@ type PRODUCT_CARD_TYPE = {
 function ProductCard(props: PRODUCT_CARD_TYPE) {
   const { title, image, price, category } = props.item ?? {};
   return (
-    <div className="bg-white shadow-[0_1px_4px_rgba(0,0,0,.15)] p-4 rounded-[10px] cursor-pointer">
+    <div className="bg-white shadow-[0_1px_4px_rgba(0,0,0,.15)] p-4 rounded-[10px] cursor-pointer min-h-[350px]">
       <img
         src={image}
         alt="product image"

@@ -23,7 +23,7 @@ function Filter(props: FILTER_TYPES) {
     setFilters((prevVal: any) => ({ ...prevVal, [filterType]: value }));
   };
   return (
-    <div className="flex items-baseline justify-end border-b border-gray-200 pb-6 pt-10 md:pt-24">
+    <div className="flex items-baseline justify-end border-b border-gray-200 pb-6 pt-10 md:pt-12">
       <div className="flex  items-center">
         <Menu as="div" className="relative inline-block text-left mr-[16px]">
           <div>
