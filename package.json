@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/mannuuk/E-CommerceWebApp.git",
+  "homepage": "https://mannuuk.github.io/E-CommerceWebApp",
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
