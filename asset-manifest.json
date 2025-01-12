@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mannuuk/E-CommerceWebApp.git/static/css/main.281938f1.css",
-    "main.js": "/mannuuk/E-CommerceWebApp.git/static/js/main.aa15d03d.js",
+    "main.js": "/mannuuk/E-CommerceWebApp.git/static/js/main.ea478a36.js",
     "static/js/231.38d2111f.chunk.js": "/mannuuk/E-CommerceWebApp.git/static/js/231.38d2111f.chunk.js",
     "static/js/919.0dedf66b.chunk.js": "/mannuuk/E-CommerceWebApp.git/static/js/919.0dedf66b.chunk.js",
     "static/js/453.68693753.chunk.js": "/mannuuk/E-CommerceWebApp.git/static/js/453.68693753.chunk.js",
     "static/js/201.c91dedf9.chunk.js": "/mannuuk/E-CommerceWebApp.git/static/js/201.c91dedf9.chunk.js",
     "index.html": "/mannuuk/E-CommerceWebApp.git/index.html",
     "main.281938f1.css.map": "/mannuuk/E-CommerceWebApp.git/static/css/main.281938f1.css.map",
-    "main.aa15d03d.js.map": "/mannuuk/E-CommerceWebApp.git/static/js/main.aa15d03d.js.map",
+    "main.ea478a36.js.map": "/mannuuk/E-CommerceWebApp.git/static/js/main.ea478a36.js.map",
     "231.38d2111f.chunk.js.map": "/mannuuk/E-CommerceWebApp.git/static/js/231.38d2111f.chunk.js.map",
     "919.0dedf66b.chunk.js.map": "/mannuuk/E-CommerceWebApp.git/static/js/919.0dedf66b.chunk.js.map",
     "453.68693753.chunk.js.map": "/mannuuk/E-CommerceWebApp.git/static/js/453.68693753.chunk.js.map",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.281938f1.css",
-    "static/js/main.aa15d03d.js"
+    "static/js/main.ea478a36.js"
   ]
 }
