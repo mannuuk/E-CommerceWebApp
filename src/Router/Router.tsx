@@ -7,7 +7,7 @@ const PageHeader = lazy(() => import("../Components/PageHeader"));
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/E-CommerceWebApp">
       <Suspense
         fallback={
           <div className="h-dvh flex justify-center items-center">
