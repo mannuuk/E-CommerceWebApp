@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[919],{3919:(e,a,s)=>{s.r(a),s.d(a,{default:()=>t});var c=s(579);const t=function(){return(0,c.jsx)("header",{className:"w-full bg-background py-4",children:(0,c.jsx)("div",{className:"container mx-auto px-4",children:(0,c.jsx)("h4",{className:"text-white text-[26px]",children:"E-Commerce"})})})}}}]);
+//# sourceMappingURL=919.0dedf66b.chunk.js.map
